@@ -1,0 +1,7 @@
+# Create Ticket
+POST http://localhost:4004/odata/v4/ticket/Tickets
+Content-Type: application/json
+
+{
+    "text": "Hello,\nLast week I ordered a new cat. Unfortunately, it is very loud and runs around. I do not like it. Therefore, I would like to return it. My order number is 123456789. Please contact me with the details.\nBest Regards,\nMaximilian"
+}

@@ -1,0 +1,32 @@
+
+  
+  The given text was sent from a customer to a customer support. Please create a JSON and follow the following schema strictly. Please fill the fields as following:
+  orderNumber: the order number (only numbers), if not given leave empty and ask the customer to provide the order numer.
+  summary: a summary of the text given
+  user: the name of the user, if not given leave empty
+  response: generate a possible response to the customer request. 
+  if any of the data was not provided in the given text, leave the field empty.
+  {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "orderNumber": {
+          "type": "string"
+    },
+      "summary": {
+          "type": "string"
+    },
+      "name": {
+          "type": "string"
+    },
+      "response": {
+          "type": "string"
+    }
+  },
+    "required": [
+        "orderNumber",
+      "summary",
+      "name",
+      "response"
+  ]
+}

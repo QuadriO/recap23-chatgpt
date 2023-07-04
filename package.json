@@ -6,8 +6,8 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^7",
-    "express": "^4"
+    "express": "^4",
+    "openai": "^3.3.0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1"
@@ -16,11 +16,5 @@
     "start": "cds-serve"
   },
   "cds": {
-    "requires": {
-      "OpenAI.API": {
-        "kind": "odata",
-        "model": "srv/external/openapi"
-      }
-    }
   }
 }
