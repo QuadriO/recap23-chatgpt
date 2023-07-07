@@ -5,7 +5,7 @@ const { Configuration, OpenAIApi } = require("openai");
 
 module.exports = function () {
   
-const openaiInstruction = fs.readFileSync(path.join( __dirname ,"./openai-instructions.txt"))
+  const openaiInstruction = fs.readFileSync(path.join( __dirname ,"./openai-instructions.txt"))
   const configuration = new Configuration({
     apiKey: cds.env.openaikey,
   });
